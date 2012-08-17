@@ -1,0 +1,34 @@
+<h1> Perfil de Github</h1>
+<div class="github">
+  <div class="info">
+    <%= link_to "Mi Perfil", @info.first['html_url'] %>
+
+    <%= @info.first['email'] %>
+    <%= @info.first['location'] %>
+    <%= link_to "#{@info.first['public_repos']} Repositorios", @info.first['html_url'] %>
+    <%= link_to "#{@info.first['followers']} Seguidores", "#{@info.first['html_url']}/followers"  %>
+    <%= link_to "#{@info.first['following']} Siguiendo", "#{@info.first['html_url']}/following"  %>
+  </div>
+  <div class="repos">
+    <% @info.last.each do |repo| %>
+       <div class="repo">
+           <%= repo['language'] %>
+           <%= repo['name'] %>
+           <%= repo['description'] %>
+       </div>
+
+    <% end %>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

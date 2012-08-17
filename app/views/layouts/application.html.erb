@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<div id="left">
+  <div class="resume">
+    <%= gravatar_image_tag('rderoldan1@gmail.com'.gsub('respinos', 'rderoldan1'), :alt => 'Ruben Espinosa')%>
+    <h1>Ruben Espinosa</h1>
+    <p id="icons">
+      <%= link_to "","http://www.linkedin.com/profile/view?id=166436308&locale=es_ES&trk=tab_pro",:class => 'linkedin', :target => "_blank" %>
+      <%= link_to "","http://twitter.com/rderoldan1",:class => "twitter",:target => "_blank" %>
+      <%= link_to "","https://plus.google.com/109427199248613940454",:class => "google" ,:target => "_blank" %>
+      <%= link_to "","https://plus.google.com/109427199248613940454",:class => "github" ,:target => "_blank"%>
+      <%= link_to "","mailto:rderoldan1@gmail.com",:class => "email",:target => "_blank"  %>
+
+    </p>
+  </div>
+
+  <div class="links">
+    <ul>
+       <li><%= link_to "Home", "/pages/home", :class => clase("home") %></li>
+      <li ><%= link_to "Github", "/pages/github", :class => clase("github") %></li>
+      <li><%= link_to "Twitter", "/pages/twitter", :class => clase("twitter") %></li>
+      <li><%= link_to "Blog", "#/pages/blog", :class => clase("blog") %></li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+
+<div id="right">
+  <!--<div class="clean-gray">Clean message box</div>-->
+  <%= yield %>
+</div>
+
+
+
+</body>
+</html>

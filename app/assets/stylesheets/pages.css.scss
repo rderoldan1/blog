@@ -1,0 +1,63 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#right .github{
+  border: #D2D2D2 solid 1px;
+  width: 50%;
+  padding: 40px;
+  margin-top: 10%;
+}
+
+#right .github {
+    .info{
+      border-bottom: #D2D2D2 solid 1px;
+      margin-bottom: 40px;
+    }
+    .repo{
+      border-top: #D2D2D2 solid 1px ;
+      border-bottom: #D2D2D2 solid 1px ;
+
+    }
+}
+
+.clean-gray{
+  border:solid 1px #DEDEDE;
+  background: #dcdcdc;
+  color:#222222;
+  padding:4px;
+  text-align:center;
+  position: fixed;
+  z-index: 101;
+
+}
+#icons a {
+  background-image: url("http://www.igvita.com/images/socialmedia_sprite.png");
+  background-repeat: no-repeat;
+  height: 2px;
+  width: 0px;
+  display: block;
+  float: left;
+  margin-right: -1em;
+  &:hover{
+    background: url("http://www.igvita.com/images/socialmedia_sprite.png");
+    background-repeat: no-repeat;
+  }
+}
+
+#icons a.linkedin {
+  background-position: 0px 0px;
+}
+#icons a.twitter {
+  background-position: 0px -32px;
+}
+
+#icons a.google {
+  background-position: 0px -64px;
+}
+#icons a.github {
+  background-position: 0px -96px;
+}
+#icons a.email {
+  background-position: 0px -160px;
+}

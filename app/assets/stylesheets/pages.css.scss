@@ -3,10 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #right .github{
-  border: #D2D2D2 solid 1px;
-  width: 50%;
-  padding: 40px;
-  margin-top: 10%;
+
+  width: 90%;
+  padding: 10px 30px;
+  margin-top: 50px;
+  border-image: url("border.png")7 7 7 7 stretch;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1E8CBE), color-stop(1, #4E85D5));
+  color: #ffffff;
+  .teeth{
+    background-image: url("teeth.png");
+    width: calc(100% + 2px);
+    width: -moz-calc(100% + 2px);
+    width: -webkit-calc(100% + 2px);
+    left: -1px;
+    position: relative;
+    bottom: -6px;
+    height: 6px;
+    width: 100%;
+    background-repeat: repeat-x;
+    background-position: top;
+    z-index: 1;
+
+  }
 }
 
 #right .github {
@@ -15,9 +33,11 @@
       margin-bottom: 40px;
     }
     .repo{
-      border-top: #D2D2D2 solid 1px ;
-      border-bottom: #D2D2D2 solid 1px ;
-
+      border: #D2D2D2 solid 1px ;
+      width: 250px;
+      height: 250px;
+      float: left;
+      margin: 5px;
     }
 }
 
@@ -32,21 +52,20 @@
 
 }
 #icons a {
-  background-image: url("http://www.igvita.com/images/socialmedia_sprite.png");
+  background-image: url("socialmedia_sprite.png");
   background-repeat: no-repeat;
-  height: 2px;
-  width: 0px;
+  position: relative;
+  height: 32px;
+  width: 60px;
   display: block;
   float: left;
   margin-right: -1em;
-  &:hover{
-    background: url("http://www.igvita.com/images/socialmedia_sprite.png");
-    background-repeat: no-repeat;
-  }
+
 }
 
 #icons a.linkedin {
   background-position: 0px 0px;
+
 }
 #icons a.twitter {
   background-position: 0px -32px;

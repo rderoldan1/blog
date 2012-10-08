@@ -1,6 +1,6 @@
-<h1> Perfil de Github</h1>
 <div class="github">
   <div class="info">
+    <h1> Perfil de Github</h1>
     <%= link_to "Mi Perfil", @info.first['html_url'] %>
 
     <%= @info.first['email'] %>
@@ -9,6 +9,7 @@
     <%= link_to "#{@info.first['followers']} Seguidores", "#{@info.first['html_url']}/followers"  %>
     <%= link_to "#{@info.first['following']} Siguiendo", "#{@info.first['html_url']}/following"  %>
   </div>
+  <div class="teeth"></div>
   <div class="repos">
     <% @info.last.each do |repo| %>
        <div class="repo">
@@ -19,16 +20,5 @@
 
     <% end %>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
+  <div class="ajustar"></div>
 </div>

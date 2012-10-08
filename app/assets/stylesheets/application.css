@@ -12,64 +12,10 @@
  *= require_tree .
  */
 
-.nivo-slice {
-    display:block;
-    position:absolute;
-    z-index:50;
-    height:200px;
-}
-
-.nivo-caption {
-    position:absolute;
-    left:0px;
-    bottom:0px;
-    background:#000;
-    color:#fff;
-    opacity:0.8;
-    width:100%;
-    z-index:89;
-}
-.nivo-caption p {
-    padding:5px;
-    margin:0;
-}
-
-.nivo-directionNav a {
-    position:absolute;
-    top:45%;
-    z-index:99;
-    cursor:pointer;
-}
-.nivo-prevNav {
-    left:0px;
-}
-.nivo-nextNav {
-    right:0px;
-}
-
-.nivo-controlNav a {
-    position:relative;
-    z-index:99;
-    cursor:pointer;
-}
-.nivo-controlNav a.active {
-    font-weight:bold;
-}
-#slider {
-    position:relative;
-}
-#slider img {
-    position:absolute;
-    top:0px;
-    left:0px;
-    width: 100px;
-    height: 100px;
-}
-
 
 body{
     margin: 0;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: ubuntu,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 15px;
     color: #404040;
 }
@@ -81,7 +27,7 @@ h1{
 #left{
     float: left;
     position: fixed;
-    width: 25%;
+    width: 350px;
     background-image: url("b.png");
     min-height: 100%;
     border-right: #D2D2D2 solid 1px;
@@ -124,7 +70,7 @@ h1{
 }
 
 
-#left a{
+#left .links a{
     text-decoration: none;
     position: relative;
     padding: 15px 30px;
@@ -139,7 +85,7 @@ h1{
 
 }
 
-#left a:hover{
+#left .links a:hover{
     background-color: #1E8CBE;
     color: white;
     -moz-transition: color 0.6s;
@@ -152,6 +98,7 @@ h1{
     float: left;
     margin-left: 400px;
 
-
-
+}
+.ajustar{
+    clear: both;
 }
